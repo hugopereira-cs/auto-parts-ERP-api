@@ -1,7 +1,7 @@
 {
-  "name": "contact-list-api",
+  "name": "auto-parts-ERP-api",
   "version": "1.0.0",
-  "description": "An API to perform CRUD operations on the database.",
+  "description": "REST API for an ERP-style system, built with Node.js and Express, for an auto parts store (personal portfolio project).",
   "main": "index.js",
   "scripts": {
     "dist": "ts down src",
