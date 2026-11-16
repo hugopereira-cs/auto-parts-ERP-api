@@ -4,15 +4,18 @@
   "description": "REST API for an ERP-style system, built with Node.js and Express, for an auto parts store (personal portfolio project).",
   "main": "index.js",
   "scripts": {
-    "dist": "ts down src",
-    "start:dev": "tsx --env-file=.env src/server.ts",
-    "start:watch": "tsx watch --env-file=.env src/server.ts",
-    "start:dist": "npm run dist && node dist/src/server.js",
+    "start": "tsx --env-file=.env src/server.ts",
+    "dev": "tsx watch --env-file=.env src/server.ts",
+    "clean": "rm -rf dist coverage",
     "typecheck": "tsc --noEmit",
-    "lint": "biome check .",
+    "lint": "biome ci .",
     "format": "biome format --write .",
     "test": "vitest run",
-		"test:watch": "vitest"
+    "test:watch": "vitest",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:seed": "tsx --env-file=.env prisma/seed.ts"
   },
   "keywords": [
     "node",
@@ -25,7 +28,6 @@
     "@biomejs/biome": "^2.5.10",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.6",
-    "tsdown": "^0.22.14",
     "tsx": "^4.23.12",
     "typescript": "^7.0.2"
   },
