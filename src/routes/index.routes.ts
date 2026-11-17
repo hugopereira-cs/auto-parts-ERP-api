@@ -2,6 +2,7 @@ import { Router } from "express";
 
 const router = Router();
 
+// Return status of the server, project name and timestamp
 router.get("/", (_req, res) => {
 	res.json({
 		status: "ok",
