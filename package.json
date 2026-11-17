@@ -1,37 +1,37 @@
 {
-  "name": "auto-parts-ERP-api",
-  "version": "1.0.0",
-  "description": "REST API for an ERP-style system, built with Node.js and Express, for an auto parts store (personal portfolio project).",
-  "main": "index.js",
-  "scripts": {
-    "start": "tsx --env-file=.env src/server.ts",
-    "dev": "tsx watch --env-file=.env src/server.ts",
-    "clean": "rm -rf dist coverage",
-    "typecheck": "tsc --noEmit",
-    "lint": "biome ci .",
-    "format": "biome format --write .",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev",
-    "db:deploy": "prisma migrate deploy",
-    "db:seed": "tsx --env-file=.env prisma/seed.ts"
-  },
-  "keywords": [
-    "node",
-    "typescript"
-  ],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "devDependencies": {
-    "@biomejs/biome": "^2.5.10",
-    "@types/express": "^5.0.6",
-    "@types/node": "^26.6.6",
-    "tsx": "^4.23.12",
-    "typescript": "^7.0.2"
-  },
-  "dependencies": {
-    "express": "^5.3.0"
-  }
+	"name": "auto-parts-ERP-api",
+	"version": "1.0.0",
+	"description": "REST API for an ERP-style system, built with Node.js and Express, for an auto parts store (personal portfolio project).",
+	"main": "index.js",
+	"scripts": {
+		"start": "tsx --env-file=.env src/server.ts",
+		"dev": "tsx watch --env-file=.env src/server.ts",
+		"clean": "rm -rf dist coverage",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome ci .",
+		"format": "biome format --write .",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"db:generate": "prisma generate",
+		"db:migrate": "prisma migrate dev",
+		"db:deploy": "prisma migrate deploy",
+		"db:seed": "tsx --env-file=.env prisma/seed.ts"
+	},
+	"keywords": [
+		"node",
+		"typescript"
+	],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.10",
+		"@types/express": "^5.0.6",
+		"@types/node": "^26.6.6",
+		"tsx": "^4.23.12",
+		"typescript": "^7.0.2"
+	},
+	"dependencies": {
+		"express": "^5.3.0"
+	}
 }
