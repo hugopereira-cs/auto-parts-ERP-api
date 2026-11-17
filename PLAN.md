@@ -1,4 +1,4 @@
-# ERP Autopeças - Backend: Spec (passo a passo por commits)
+# ERP Autopeças - Backend: Planejamento (passo a passo por commits)
 
 > Siga as fases em ordem. Cada passo é **um commit** (Conventional Commits) e termina com um critério de "Pronto quando", para você só avançar com o anterior funcionando.
 > Detalhes da stack, estrutura e regras estão em `AGENTS.md`.
@@ -23,7 +23,7 @@
 - [x] Instalar `typescript`, `tsx` e `@types/node` (dev)
 - [x] Criar `tsconfig.json` simples, com `strict` ligado
 - [x] Criar `.gitignore` (`node_modules`, `.env`, `dist`, `coverage`)
-- [ ] Criar os scripts `start`, `dev` e `clean` no `package.json`
+- [x] Criar os scripts `start`, `dev` e `clean` no `package.json`
 
 **Pronto quando:** `npm run dev` roda um `src/server.ts` vazio sem erro.
 
@@ -31,10 +31,10 @@
 
 `feat: adiciona servidor express com rotas base`
 
-- [ ] Instalar `express` e `@types/express`
-- [ ] Criar `src/app.ts` (cria e configura o app, com `express.json()`)
-- [ ] Criar `src/server.ts` (sobe o servidor)
-- [ ] Criar `src/routes/index.routes.ts` com `/api` (status, nome do projeto e timestamp) e `/api/hello`
+- [x] Instalar `express` e `@types/express`
+- [x] Criar `src/app.ts` (cria e configura o app, com `express.json()`)
+- [x] Criar `src/server.ts` (sobe o servidor)
+- [x] Criar `src/routes/index.routes.ts` com `/api` (status, nome do projeto e timestamp) e `/api/hello`
 
 **Pronto quando:** `GET http://localhost:3333/api` retorna JSON com status e timestamp.
 
