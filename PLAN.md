@@ -53,9 +53,9 @@
 
 `chore: configura biome para lint e formatacao`
 
-- [ ] Instalar `@biomejs/biome` e rodar `npx biome init`
-- [ ] Criar os scripts `lint` e `format`
-- [ ] Rodar `npm run format` e corrigir o que o lint apontar
+- [x] Instalar `@biomejs/biome` e rodar `npx biome init`
+- [x] Criar os scripts `lint` e `format`
+- [x] Rodar `npm run format` e corrigir o que o lint apontar
 
 **Pronto quando:** `npm run lint` passa sem erros.
 
@@ -63,10 +63,10 @@
 
 `test: configura vitest e supertest com primeiro teste`
 
-- [ ] Instalar `vitest` e `supertest` (+ `@types/supertest`)
-- [ ] Criar `vitest.config.ts`
-- [ ] Criar os scripts `test`, `test:watch` e `typecheck`
-- [ ] Criar `tests/api.test.ts` testando `GET /api` e `GET /api/hello`
+- [x] Instalar `vitest` e `supertest` (+ `@types/supertest`)
+- [x] Criar `vitest.config.ts`
+- [x] Criar os scripts `test`, `test:watch` e `typecheck`
+- [x] Criar `tests/api.test.ts` testando `GET /api` e `GET /api/hello`
 
 **Pronto quando:** `npm test` passa.
 
