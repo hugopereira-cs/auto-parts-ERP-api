@@ -42,10 +42,10 @@
 
 `feat: valida variaveis de ambiente com zod`
 
-- [ ] Instalar `zod` e `dotenv`
-- [ ] Criar `.env` e `.env.example` com `PORT=3333` e `NODE_ENV`
-- [ ] Criar `src/config/env.ts` que valida o `process.env` e encerra o boot se faltar algo
-- [ ] Usar `env.PORT` no `server.ts`
+- [x] Instalar `zod` e `dotenv`
+- [x] Criar `.env` e `.env.example` com `PORT=3333` e `NODE_ENV`
+- [x] Criar `src/config/env.ts` que valida o `process.env` e encerra o boot se faltar algo
+- [x] Usar `env.PORT` no `server.ts`
 
 **Pronto quando:** remover `PORT` do `.env` faz a aplicação falhar com uma mensagem clara.
 
