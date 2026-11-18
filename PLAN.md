@@ -83,9 +83,9 @@
 
 `ci: adiciona workflow do github actions`
 
-- [ ] Criar `.github/workflows/ci.yml` (no repositório, ajustando `working-directory` para `backend/`)
-- [ ] Etapas: `actions/checkout`, `actions/setup-node` (com cache do npm), `npm ci`, `npm run lint`, `npm run typecheck`, `npm test`
-- [ ] Rodar em `push` e `pull_request`
+- [x] Criar `.github/workflows/ci.yml` (no repositório, ajustando `working-directory` para `backend/`)
+- [x] Etapas: `actions/checkout`, `actions/setup-node` (com cache do npm), `npm ci`, `npm run lint`, `npm run typecheck`, `npm test`
+- [x] Rodar em `push` e `pull_request`
 
 **Pronto quando:** o workflow fica verde no GitHub.
 
