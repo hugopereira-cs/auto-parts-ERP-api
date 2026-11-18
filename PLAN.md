@@ -74,8 +74,8 @@
 
 `chore: adiciona husky e lint-staged`
 
-- [ ] Instalar `husky` e `lint-staged`
-- [ ] Configurar o pre-commit para rodar o Biome nos arquivos alterados e o `typecheck`
+- [x] Instalar `husky` e `lint-staged`
+- [x] Configurar o pre-commit para rodar o Biome nos arquivos alterados e o `typecheck`
 
 **Pronto quando:** um commit com erro de lint é bloqueado.
 
