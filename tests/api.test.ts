@@ -14,6 +14,18 @@ describe("API base routes", () => {
 		expect(response.body).toHaveProperty("timestamp");
 	});
 
+	it("GET /api/non-existent-route - sould return 404 with standardized error JSON", async () => {
+		const response = await request(app).get("/api/non-existent-route");
+
+		expect(response.status).toBe(404);
+		expect(response.body).toEqual({
+			error: {
+				code: "ROUTE_NOT_FOUND",
+				message: "Rota GET /api/non-existent-route não encontrada",
+			},
+		});
+	});
+
 	it("GET /api/hello - should return the message Hello, World!", async () => {
 		const response = await request(app).get("/api/hello");
 

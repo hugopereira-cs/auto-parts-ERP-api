@@ -97,10 +97,10 @@
 
 `feat: adiciona tratamento global de erros`
 
-- [ ] Criar `src/shared/errors/app-error.ts` (mensagem, status HTTP e código)
-- [ ] Criar `src/middlewares/not-found.ts` e `src/middlewares/error-handler.ts`
-- [ ] Padronizar a resposta de erro em JSON (`{ error: { code, message, details? } }`)
-- [ ] Tratar erros do Zod e do Prisma (violação de unicidade, registro não encontrado) no handler
+- [x] Criar `src/shared/errors/app-error.ts` (mensagem, status HTTP e código)
+- [x] Criar `src/middlewares/not-found.ts` e `src/middlewares/error-handler.ts`
+- [x] Padronizar a resposta de erro em JSON (`{ error: { code, message, details? } }`)
+- [x] Tratar erros do Zod e do Prisma (violação de unicidade, registro não encontrado) no handler
 - [ ] Testes: rota inexistente retorna 404 em JSON
 
 **Pronto quando:** qualquer erro, esperado ou não, sai no mesmo formato JSON e sem vazar stack trace em produção.
