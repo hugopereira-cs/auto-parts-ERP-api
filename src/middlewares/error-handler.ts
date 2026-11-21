@@ -3,7 +3,7 @@ import { ZodError } from "zod";
 import { env } from "../config/env";
 import { AppError } from "../shared/errors/app-error";
 
-// Middleware de tratamento de erros (Precisa receber essses 4 parâmetros para que Express o reconheça como um Error Handler)
+// Middleware de tratamento de erros (Precisa receber esses 4 parâmetros para que o Express o reconheça como um Error Handler)
 export function errorHandler(
 	error: Error,
 	_req: Request,

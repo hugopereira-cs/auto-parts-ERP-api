@@ -6,7 +6,7 @@ export class AppError extends Error {
 	constructor(
 		message: string,
 		statusCode = 400,
-		code = "BAD-REQUEST",
+		code = "BAD_REQUEST",
 		details?: unknown,
 	) {
 		super(message);

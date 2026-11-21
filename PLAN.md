@@ -101,7 +101,7 @@
 - [x] Criar `src/middlewares/not-found.ts` e `src/middlewares/error-handler.ts`
 - [x] Padronizar a resposta de erro em JSON (`{ error: { code, message, details? } }`)
 - [x] Tratar erros do Zod e do Prisma (violação de unicidade, registro não encontrado) no handler
-- [ ] Testes: rota inexistente retorna 404 em JSON
+- [x] Testes: rota inexistente retorna 404 em JSON
 
 **Pronto quando:** qualquer erro, esperado ou não, sai no mesmo formato JSON e sem vazar stack trace em produção.
 
@@ -109,8 +109,8 @@
 
 `feat: adiciona middleware de validacao com zod`
 
-- [ ] Criar `src/middlewares/validate.ts`, que recebe schemas Zod para `body`, `query` e `params`
-- [ ] Testes: entrada inválida retorna 400 com os detalhes dos campos
+- [x] Criar `src/middlewares/validate.ts`, que recebe schemas Zod para `body`, `query` e `params`
+- [x] Testes: entrada inválida retorna 400 com os detalhes dos campos
 
 **Pronto quando:** uma rota de exemplo rejeita entrada inválida de forma padronizada.
 
